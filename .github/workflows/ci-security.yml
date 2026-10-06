@@ -18,3 +18,5 @@ jobs:
           pip install -r requirements.txt
       - name: Run Unit Tests
         run: pytest
+      - name: Run Security Scan
+        run: bandit -r .
